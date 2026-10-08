@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linktree</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-
-    <!-- JS scripts -->
-    <script src="scripts/placeholder.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>John Doe — Contact</title>
+<meta name="description" content="Dias Stas — studying & writing code. Website, GitHub, GitLab, Mastodon and mail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&family=Space+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<div class="cd" id="cd"></div><div class="co" id="co"></div>
+
+<div id="home">
+    <header class="top"><div class="wrap topin">
+      <form class="pf" id="pf" autocomplete="off">
+        <label for="top">John@contact:~$</label>
+        <input id="top" type="text" placeholder="shell" autocapitalize="off" spellcheck="false" aria-label="Terminal prompt. Press Enter to open the shell.">
+        <button class="ret" type="submit" aria-label="Open shell" title="Open shell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 9.5l3 2.5-3 2.5M13 15h4"/></svg></button>
+      </form>
+      <p class="msg" id="msg" aria-live="polite"></p>
+    </div></header>
+  <div class="wrap">
+    <section class="hero">
+      <div class="hd"><i class="ec" aria-hidden="true">CONTACT</i><i class="ec" aria-hidden="true">CONTACT</i><div class="hw"><h1>CONTACT</h1><svg class="deco" viewBox="0 0 400 200" aria-hidden="true">
+        <use href="#rings" x="40" y="10" width="180" height="180"/>
+        <use href="#sphere" x="200" y="22" width="140" height="140"/>
+        <use href="#orbit" x="296" y="108" width="96" height="86"/>
+      </svg></div></div>
+    </section>
+  </div>
+  <div class="mq" aria-hidden="true"><span id="mq"></span></div>
+  <main class="wrap">
+    <div class="stack">
+      <section class="win" id="who" aria-label="Profile">
+        <div class="who">
+          <img class="pic" src="images/pfp.jpg" alt="Profile picture of Dias Stas">
+          <div class="pb"><small>{ whoami }</small><b>John Doe</b>I unga therefore i bunga<br><small>[ ● online ]</small></div>
+        </div>
+      </section>
+      <nav class="win" id="links" aria-label="Links">
+        <a class="link" href="" target="_blank" rel="noopener"><span><b>Website</b><small>placeholder</small></span><span class="go">GO</span></a>
+        <a class="link" href="" target="_blank" rel="noopener"><span><b>GitHub</b><small>placeholder</small></span><span class="go">GO</span></a>
+        <a class="link" href="" target="_blank" rel="noopener"><span><b>GitLab</b><small>placeholder</small></span><span class="go">GO</span></a>
+        <a class="link" href="" target="_blank" rel="noopener"><span><b>Mastodon</b><small>placeholder</small></span><span class="go">GO</span></a>
+        <a class="link" href=""><span><b>Mail</b><small>placeholder</small></span><span class="go">GO</span></a>
+      </nav>
+    </div>
+    <footer><div class="foot">&copy;<span id="year"></span> - John Doe</div></footer>
+  </main>
+</div>
+
+<div id="term" hidden>
+  <div class="wrap">
+    <section class="win termwin" aria-label="Terminal">
+      <div class="tb"><span>shell.exe</span><span class="btns"><i aria-hidden="true">_</i><i aria-hidden="true">□</i><a href="#" aria-label="Close shell and go back">×</a></span></div>
+      <div class="sh">
+        <div id="log" aria-live="polite"></div>
+        <form class="in" id="cf"><label for="cmd">John@contact:~$</label><input id="cmd" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="terminal command"></form>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
