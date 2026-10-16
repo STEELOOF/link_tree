@@ -1,43 +1,48 @@
-# 🔗 LinkTree
+# Contact site
 
-A simple, modern, and customizable **LinkTree-style website** for sharing multiple links from a single page.
+A simple link-in-bio page. Vanilla HTML, CSS and JavaScript — no frameworks, no build step.
 
-## 📖 About
+## Features
 
-LinkTree is a project built by two friends as a way to experiment with web development and create our own version of a LinkTree-style platform.
+- Profile picture with a blue gradient frame, tilted backing card and waving "Say hi" badge
+- White background with a faint dot grid and soft blue glows
+- Stacked blue gradient pill buttons: circle fill, lift and sliding arrow on hover
+- Everything fades up one by one on load (turned off for reduced-motion users)
+- Custom cursor (dot + trailing outline), turned off on touch devices
+- Footer year updates automatically
+- Responsive on phones
 
-The project focuses on keeping the interface clean, fast, and easy to customize.
+## Structure
 
-## ✨ Features
+```
+.
+├── index.html          # all content lives here
+├── images/
+│   └── pfp.svg         # placeholder profile picture
+├── styles/
+│   ├── normalize.css
+│   └── style.css       # colors, layout, buttons
+└── scripts/
+    ├── cursor.js       # custom cursor
+    └── getYear.js      # footer year
+```
 
-- 🔗 Add and manage multiple links
-- 📱 Responsive design
-- 🎨 Customizable appearance
-- 👤 Profile section
-- 🌐 Social media links
-- ⚡ Lightweight and fast
-- 🧩 Easy to extend with new features
+## Customize
 
-## 🛠️ Tech Stack
+- **Name & tagline**: `<title>`, `<h1>`, `<p>` and the footer in `index.html`
+- **Links**: the `<a>` tags inside `#btn-div` (icons from [Boxicons](https://boxicons.com/))
+- **Profile picture**: add a photo to `images/` and update the `src` of `#pfp`
+- **Colors**: the variables at the top of `styles/style.css`
+- **Badge text**: the `.badge` span in `index.html` ("Say hi")
 
-The project is built with modern web technologies and is designed to remain simple and easy to maintain.
+## Run locally
 
-## 🚧 Status
+Open `index.html`, or:
 
-**In Development**
+```bash
+python3 -m http.server 8000
+```
 
-This is currently a test project. Features, design, and functionality are still being developed and improved.
+## License
 
-## 🎯 Goal
-
-The goal is to build a clean and flexible LinkTree alternative while learning, experimenting, and having fun with web development.
-
-## 🤝 Contributors
-
-Built by two friends working together on the project.
-
----
-
-<p align="center">
-  Made with ❤️ for fun & learning
-</p>
+MIT
