@@ -8,7 +8,7 @@ A simple link-in-bio page. Vanilla HTML, CSS and JavaScript — no frameworks, n
 - White background with a faint dot grid and soft blue glows
 - Stacked blue gradient pill buttons: circle fill, lift and sliding arrow on hover
 - Everything fades up one by one on load (turned off for reduced-motion users)
-- Custom cursor (dot + trailing outline), turned off on touch devices
+- Custom cursor: a dot plus a ring that glides after it, grows over buttons and squeezes on click (turned off on touch devices)
 - Footer year updates automatically
 - Responsive on phones
 
